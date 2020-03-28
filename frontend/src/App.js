@@ -1,27 +1,46 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css';
+
+import Routes from './routes';
 
 function App() { 
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-          Hello OmniStack
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <Routes />
+
   );
 }
 
 export default App;
+
+
+
+
+/*
+   Toda vez que o nosso componente precisar armazenar uma informação dentro dele devemos
+   tilizar o conceito de estado. 
+*/
+/*   const [ counter, setCounter ] = useState(0);
+
+  function increment() { 
+
+   setCounter(counter + 1);
+
+  } */
+
+{/* <div>
+
+  //Passando o parâmetro title.
+  <Header title="Semana OmniStack"> 
+  
+    Semana OmniStack Children 
+
+    Contador: { counter }
+
+  </Header> 
+
+  <button onClick={ increment }> Incrementar </button>
+
+</div> */}
